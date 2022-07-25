@@ -78,3 +78,4 @@ this.
 | Telescope | \<C-B\>      | Open buffer picker             |
 | Telescope | \<C-F\>      | Open project search            |
 | Telescope | \<C-P\>      | Open file picker               |
+| Telescope | \<C-G\>      | Open git branches              |

@@ -26,6 +26,7 @@ vim.o.mouse = 'a'
 vim.o.background = "dark"
 vim.cmd([[colorscheme gruvbox]])
 
+vim.cmd([[set clipboard+=unnamedplus]])
 
 -- Keybindings
 vim.api.nvim_set_keymap('n', 'vs', ':vs<CR>', { noremap = true })

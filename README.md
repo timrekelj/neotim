@@ -2,13 +2,13 @@
 
 ## Download configuration
 
-### Clone repository
+### 1. Clone repository
 
 ```sh
 git clone git@github.com:timrekelj/nvim-config ~/.config/nvim
 ```
 
-### Install plugins
+### 2. Install plugins
 
 ##### Install Packer
 
@@ -30,17 +30,17 @@ nvim ~/.config/nvim/init.lua
 :PackerInstall
 ```
 
+> If you get error when executing :PackerInstall, make sure you have the latest neovim version
+
 #### coc.nvim
 
 This configuration uses [coc.nvim](https://github.com/neoclide/coc.nvim) for
 intellisense, instead of the built-in Neovim LSP.
 Configuration doesn't ship with any default coc plugins though, so you have to
-install the ones you want to use. For example if you want to use nvimefor
-TypeScript programming, you'll have to install the coc-tsserver plugin like
-this.
+install the ones you want to use. For example if you want to use the same plugins as me, type in this command:
 
 ```
-:CocInstall coc-tsserver
+:CocInstall coc-pyright coc-yaml coc-rome coc-json coc-html coc-flutter coc-git coc-html-css-support coc-java coc-markdownlint coc-sh coc-svelte 
 ```
 > [Here](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions) is the list of all coc extensions.
 ---
@@ -75,7 +75,6 @@ this.
 | coc       | \<leader\>l  | Execute code autofix           |
 | coc       | \<leader\>rn | Rename symbol                  |
 | coc       | gd           | Go to definition               |
-| Telescope | \<C-B\>      | Open buffer picker             |
 | Telescope | \<C-F\>      | Open project search            |
 | Telescope | \<C-P\>      | Open file picker               |
 | Telescope | \<C-G\>      | Open git branches              |

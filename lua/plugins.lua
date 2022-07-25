@@ -3,9 +3,14 @@ return require('packer').startup(function()
   use {'neoclide/coc.nvim', branch = 'release'}
   use 'famiu/nvim-reload'
   use { "ellisonleao/gruvbox.nvim" }
+  use {
+  	"windwp/nvim-autopairs",
+    config = function()
+      require("nvim-autopairs").setup {}
+    end
+  }
   use 'nvim-treesitter/nvim-treesitter' 
   use 'tpope/vim-commentary'
-  use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'lukas-reineke/indent-blankline.nvim'
   use {
     'nvim-telescope/telescope.nvim',
@@ -18,8 +23,4 @@ return require('packer').startup(function()
       require"surround".setup {mappings_style = "surround"}
     end
   }
-
-  use 'fannheyward/coc-marketplace'
 end)
-
-

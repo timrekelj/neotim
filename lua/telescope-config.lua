@@ -9,7 +9,7 @@ telescope.setup{
   },
   extensions = {
     file_browser = {
-      theme = "dropdown",
+      theme = "ivy",
       previewer = false,
     }
   }

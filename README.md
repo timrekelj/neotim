@@ -30,7 +30,7 @@ nvim ~/.config/nvim/init.lua
 :PackerInstall
 ```
 
-## coc.nvim
+#### coc.nvim
 
 This configuration uses [coc.nvim](https://github.com/neoclide/coc.nvim) for
 intellisense, instead of the built-in Neovim LSP.

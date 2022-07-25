@@ -42,7 +42,7 @@ this.
 ```
 :CocInstall coc-tsserver
 ```
-
+> [Here](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions) is the list of all coc extensions.
 ---
 
 

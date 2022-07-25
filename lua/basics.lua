@@ -1,5 +1,6 @@
+-- Basics
 vim.g.mapleader = " "
-vim.o.number  =true
+vim.o.number = true
 vim.o.relativenumber = true
 vim.o.wrap = false
 vim.o.expandtab = true
@@ -16,15 +17,17 @@ vim.o.errorbells = false
 vim.o.shiftwidth = 2
 vim.o.numberwidth = 4
 vim.o.termguicolors = true
-vim.o.colorcolumn = '80'
 vim.o.showmode = false
 vim.o.showtabline = 2
 vim.o.signcolumn = 'yes'
 vim.o.mouse = 'a'
 
+-- Set theme
 vim.o.background = "dark"
 vim.cmd([[colorscheme gruvbox]])
 
+
+-- Keybindings
 vim.api.nvim_set_keymap('n', 'vs', ':vs<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'sp', ':sp<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-L>', '<C-W><C-L>', { noremap = true })
@@ -38,21 +41,4 @@ vim.api.nvim_set_keymap('n', 'to', ':tabo<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-S>', ':%s/', { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>t", ":sp<CR> :term<CR> :resize 20N<CR> i", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", {noremap = true, silent = true})
--- vim.api.nvim_set_keymap('n', '<C-N>', ":Lexplore<CR> :vertical resize 30<CR>", { noremap = true })
 
--- vim.g["netrw_banner"] = 0
--- vim.g["netrw_liststyle"] = 3
--- vim.g["netrw_winsize"] = 25
-
-vim.cmd([[
-  hi ActiveWindow guibg=#1B1B26
-  hi InactiveWindow guibg=#2d2d3b
-  augroup WindowManagement
-    autocmd!
-    autocmd WinEnter * call Handle_Win_Enter()
-  augroup END
-  function! Handle_Win_Enter()
-    setlocal winhighlight=Normal:ActiveWindow,NormalNC:InactiveWindow
-    highlight SignColumn guibg=Normal:ActiveWindow,NormalNC:InactiveWindow
-  endfunction
-]])

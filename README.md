@@ -40,7 +40,7 @@ Configuration doesn't ship with any default coc plugins though, so you have to
 install the ones you want to use. For example if you want to use the same plugins as me, type in this command:
 
 ```
-:CocInstall coc-pyright coc-yaml coc-rome coc-json coc-html coc-flutter coc-git coc-html-css-support coc-java coc-markdownlint coc-sh coc-svelte 
+:CocInstall coc-rust-analyzer coc-pyright coc-yaml coc-rome coc-json coc-html coc-flutter coc-git coc-html-css-support coc-java coc-markdownlint coc-sh coc-svelte 
 ```
 > [Here](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions) is the list of all coc extensions.
 ---
@@ -56,15 +56,14 @@ install the ones you want to use. For example if you want to use the same plugin
 |           | \<C-J\>      | Move one split down            |
 |           | \<C-K\>      | Move one split up              |
 |           | \<C-L\>      | Move one split right           |
-|           | \<C-N\>      | Open file explorer             |
 |           | \<C-S\>      | Open search & replace          |
-|           | \<leader-t\> | Open a terminal buffer         |
-|           | sp           | Split window horizontally      |
+|           | \<leader\>t  | Open a terminal buffer         |
+|           | \<leader\>O  | Split window vertically        |
+|           | \<leader\>E  | Split window horizontally      |
 |           | tj           | Move one tab left              |
 |           | tk           | Move one tab right             |
 |           | tn           | Create a new tab               |
 |           | to           | Close all other tabs           |
-|           | vs           | Split window vertically        |
 | coc       | K            | Hover over symbol              |
 | coc       | \<C-Space\>  | Open autocompletion            |
 | coc       | \<CR\>       | Select autocompletion          |
@@ -75,6 +74,6 @@ install the ones you want to use. For example if you want to use the same plugin
 | coc       | \<leader\>l  | Execute code autofix           |
 | coc       | \<leader\>rn | Rename symbol                  |
 | coc       | gd           | Go to definition               |
-| Telescope | \<C-F\>      | Open project search            |
-| Telescope | \<C-P\>      | Open file picker               |
-| Telescope | \<C-G\>      | Open git branches              |
+| Telescope | \<leader\>p  | Open file picker               |
+| Telescope | \<leader\>g  | Open git branches              |
+| Telescope | \<leader\>n  | Open file tree                 |

@@ -21,5 +21,18 @@ mason_lspconfig.setup({
     ensure_installed = {
         "sumneko_lua",
         "rust_analyzer",
+        "bashls",
+        "ansiblels",
+        "cssls",
+        "dockerls",
+        "eslint",
+        "html",
+        "jsonls",
+        "marksman",
+        "pyright",
+        "svelte",
+        "yamlls",
+        "vuels",
+        "tsserver"
     }
 })

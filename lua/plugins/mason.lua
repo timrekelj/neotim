@@ -17,4 +17,9 @@ if not status_ok then
 end
 
 mason.setup()
-mason_lspconfig.setup()
+mason_lspconfig.setup({
+    ensure_installed = {
+        "sumneko_lua",
+        "rust_analyzer",
+    }
+})

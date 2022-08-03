@@ -46,16 +46,31 @@ return packer.startup(function(use)
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
   }
+  use { "j-hui/fidget.nvim",
+    config = function()
+      require("fidget").setup()
+    end
+  }
+  use { "folke/trouble.nvim",
+    config = function()
+      require("trouble").setup()
+    end
+  }
+  use "mfussenegger/nvim-lint" 
+
   -- Autocomplete
-  use {
-    'hrsh7th/nvim-cmp',
-    requires = {
-      'L3MON4D3/LuaSnip',
-      'hrsh7th/cmp-nvim-lsp',
-      'hrsh7th/cmp-path',
-      'hrsh7th/cmp-buffer',
-      'saadparwaiz1/cmp_luasnip',
-    },
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-cmdline"
+  use "hrsh7th/cmp-nvim-lua"
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lsp-signature-help"
+  use "hrsh7th/cmp-path"
+  use { "L3MON4D3/LuaSnip",
+    requires = { "saadparwaiz1/cmp_luasnip" },
+    config = function()
+      require("luasnip.loaders.from_lua").load({ paths = "~/.snippets" })
+    end
   }
 
   -- Icons

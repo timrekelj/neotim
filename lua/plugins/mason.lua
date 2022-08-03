@@ -36,3 +36,11 @@ mason_lspconfig.setup({
         "tsserver"
     }
 })
+
+mason_lspconfig.setup_handlers({
+  function (server_name)
+    require("lspconfig")[server_name].setup {
+      on_attach = require("other/shared").on_attach,
+    }
+  end
+})

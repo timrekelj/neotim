@@ -9,6 +9,7 @@ require('core.keymaps')
 require('plugins.alpha')
 require('plugins.indent_blankline')
 require('plugins.nvim-cmp')
-require('plugins.nvim-lspconfig')
 require('plugins.nvim-treesitter')
 require('plugins.telescope')
+require('plugins.mason')
+

@@ -1,19 +1,19 @@
 # My personal neovim configuration
 
 ## Requirements
- - (neovim (v0.7.x))[https://github.com/neovim/neovim/releases/tag/v0.7.2]
- - (Nerd Fonts)[https://www.nerdfonts.com/font-downloads]
- - (npm)[https://github.com/npm/cli] for downloading packages of LSP language servers
+ - [neovim (v0.7.x)](https://github.com/neovim/neovim/releases/tag/v0.7.2)
+ - [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
+ - [npm](https://github.com/npm/cli) for downloading packages of LSP language servers, see [LSP configuration](#lsp-configuration)
 
-## Download configuration
+## Installation
 
-### 1. Clone repository
+#### 1. Clone repository
 
 ```sh
 git clone git@github.com:timrekelj/nvim-config ~/.config/nvim
 ```
 
-### 2. Start neovim with `PackerSync` command:
+#### 2. Start neovim with `PackerSync` command:
 
 ```sh
 nvim +PackerSync
@@ -47,3 +47,7 @@ nvim +PackerSync
 | Telescope | \<leader\>g  | Open git branches              |
 | Telescope | \<leader\>b  | Open buffers                   |
 | Telescope | \<leader\>n  | Open file tree                 |
+
+## LSP configuration
+Testing
+

@@ -7,21 +7,22 @@
 
 local status_ok, telescope = pcall(require, 'telescope')
 if not status_ok then
-  return
+    return
 end
 
-telescope.setup{
-  pickers = {
-    find_files = {
-      theme = "dropdown",
-      previewer = false,
+telescope.setup {
+    pickers = {
+        find_files = {
+            hidden = true,
+            theme = "dropdown",
+            previewer = false,
+        }
+    },
+    extensions = {
+        file_browser = {
+            theme = "ivy",
+        }
     }
-  },
-  extensions = {
-    file_browser = {
-      theme = "ivy",
-    }
-  }
 }
 
 require("telescope").load_extension "file_browser"

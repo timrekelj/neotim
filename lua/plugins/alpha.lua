@@ -22,7 +22,7 @@ local function footer()
 end
 
 -- Banner
-local banner = {
+local default_banner = {
     "                                                    ",
     " ███╗   ██╗███████╗ ██████╗ ████████╗██╗███╗   ███╗ ",
     " ████╗  ██║██╔════╝██╔═══██╗╚══██╔══╝██║████╗ ████║ ",
@@ -33,7 +33,20 @@ local banner = {
     "                                                    ",
 }
 
-dashboard.section.header.val = banner
+local custom_banner = {
+    " ███▄    █ ▓█████  ▒█████  ▄▄▄█████▓ ██▓ ███▄ ▄███▓",
+    " ██ ▀█   █ ▓█   ▀ ▒██▒  ██▒▓  ██▒ ▓▒▓██▒▓██▒▀█▀ ██▒",
+    "▓██  ▀█ ██▒▒███   ▒██░  ██▒▒ ▓██░ ▒░▒██▒▓██    ▓██░",
+    "▓██▒  ▐▌██▒▒▓█  ▄ ▒██   ██░░ ▓██▓ ░ ░██░▒██    ▒██ ",
+    "▒██░   ▓██░░▒████▒░ ████▓▒░  ▒██▒ ░ ░██░▒██▒   ░██▒",
+    "░ ▒░   ▒ ▒ ░░ ▒░ ░░ ▒░▒░▒░   ▒ ░░   ░▓  ░ ▒░   ░  ░",
+    "░ ░░   ░ ▒░ ░ ░  ░  ░ ▒ ▒░     ░     ▒ ░░  ░      ░",
+    "   ░   ░ ░    ░   ░ ░ ░ ▒    ░       ▒ ░░      ░   ",
+    "         ░    ░  ░    ░ ░            ░         ░   ",
+    "                                                   ",
+}
+
+dashboard.section.header.val = custom_banner
 
 -- Menu
 dashboard.section.buttons.val = {
@@ -46,4 +59,3 @@ dashboard.section.buttons.val = {
 dashboard.section.footer.val = footer()
 
 alpha.setup(dashboard.config)
-

@@ -22,12 +22,6 @@ vim.o.showtabline = 2
 vim.o.signcolumn = 'yes'
 vim.o.mouse = 'a'
 
-local status_ok, gruvbox = pcall(require, 'gruvbox')
-if status_ok then
-  -- Set theme
-  vim.o.background = "dark"
-
-  vim.cmd([[colorscheme gruvbox]])
-end
+vim.cmd [[colorscheme tokyonight]]
 
 vim.cmd([[set clipboard+=unnamedplus]])

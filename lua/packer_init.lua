@@ -56,7 +56,6 @@ return packer.startup(function(use)
             require("trouble").setup()
         end
     }
-    use "mfussenegger/nvim-lint"
 
     -- Autocomplete
     use "hrsh7th/nvim-cmp"

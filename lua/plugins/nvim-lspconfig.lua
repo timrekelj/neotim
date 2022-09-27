@@ -10,42 +10,42 @@
 
 local lsp_status_ok, lspconfig = pcall(require, 'lspconfig')
 if not lsp_status_ok then
-  return
+    return
 end
 
 lspconfig.gopls.setup({
-  on_attach = function(client, bufnr)
-    require("other/shared").on_attach(client, bufnr)
+    on_attach = function(client, bufnr)
+        require("other/shared").on_attach(client, bufnr)
 
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      pattern = {
-        "*.go"
-      },
-      command = [[lua OrgImports(1000)]]
-    })
-  end,
-  cmd = { "gopls" },
-  settings = {
-    gopls = {
-      analyses = {
-        nilness = true,
-        unusedparams = true,
-        unusedwrite = true,
-        useany = true,
-      },
-      experimentalPostfixCompletions = true,
-      gofumpt = true,
-      staticcheck = true,
-      usePlaceholders = true,
-      hints = {
-        assignVariableTypes = true,
-        compositeLiteralFields = true,
-        compositeLiteralTypes = true,
-        constantValues = true,
-        functionTypeParameters = true,
-        parameterNames = true,
-        rangeVariableTypes = true,
-      }
+        vim.api.nvim_create_autocmd("BufWritePre", {
+            pattern = {
+                "*.go"
+            },
+            command = [[lua OrgImports(1000)]]
+        })
+    end,
+    cmd = { "gopls" },
+    settings = {
+        gopls = {
+            analyses = {
+                nilness = true,
+                unusedparams = true,
+                unusedwrite = true,
+                useany = true,
+            },
+            experimentalPostfixCompletions = true,
+            gofumpt = true,
+            staticcheck = true,
+            usePlaceholders = true,
+            hints = {
+                assignVariableTypes = true,
+                compositeLiteralFields = true,
+                compositeLiteralTypes = true,
+                constantValues = true,
+                functionTypeParameters = true,
+                parameterNames = true,
+                rangeVariableTypes = true,
+            }
+        },
     },
-  },
 })

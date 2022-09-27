@@ -46,7 +46,7 @@ local custom_banner = {
     "                                                   ",
 }
 
-dashboard.section.header.val = custom_banner
+dashboard.section.header.val = default_banner
 
 -- Menu
 dashboard.section.buttons.val = {

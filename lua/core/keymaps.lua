@@ -1,4 +1,3 @@
-
 -- Split screen
 vim.api.nvim_set_keymap('n', '<leader>E', ':vs<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>O', ':sp<CR>', { noremap = true })
@@ -19,7 +18,7 @@ vim.api.nvim_set_keymap('n', 'to', ':tabo<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>S', ':%s/', { noremap = true })
 
 -- Open and close terminal
-vim.api.nvim_set_keymap("n", "<leader>t", ":sp<CR> :term<CR> :resize 20N<CR> i", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>t", ":sp<CR> :term<CR> :resize 20N<CR> i", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", {})
 
 -- Reload configuration without restart nvim

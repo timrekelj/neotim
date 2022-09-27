@@ -3,6 +3,7 @@
 #include <string.h>
 
 int main(int argc, char *argv[]) {
+
   char besede[100][50];
   char beseda[50];
 

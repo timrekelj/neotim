@@ -3,6 +3,6 @@ if not status_ok then
     return
 end
 
-require("lua.plugins.lsp.lsp-installer")
-require("lua.plugins.lsp.handlers").setup()
-require("lua.plugins.lsp.null-ls")
+require("plugins.lsp.lsp-installer")
+require("plugins.lsp.handlers").setup()
+require("plugins.lsp.null-ls")

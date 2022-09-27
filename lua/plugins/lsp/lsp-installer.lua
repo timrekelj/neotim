@@ -26,8 +26,8 @@ local opts = {}
 
 for _, server in pairs(servers) do
     opts = {
-        on_attach = require("lua.plugins.lsp.handlers").on_attach,
-        capabilities = require("lua.plugins.lsp.handlers").capabilities,
+        on_attach = require("plugins.lsp.handlers").on_attach,
+        capabilities = require("plugins.lsp.handlers").capabilities,
     }
 
     lspconfig[server].setup(opts)

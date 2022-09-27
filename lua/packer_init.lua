@@ -86,6 +86,7 @@ return packer.startup(function(use)
 
     -- Themes
     use 'navarasu/onedark.nvim'
+    use { "catppuccin/nvim", as = "catppuccin" }
 
     -- Syntax highlihting
     use 'nvim-treesitter/nvim-treesitter'

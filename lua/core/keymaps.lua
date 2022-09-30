@@ -26,3 +26,6 @@ vim.api.nvim_set_keymap('n', '<leader>r', ':so %<CR>', { noremap = true })
 
 -- Close all windows and exit from Neovim with <leader> and q
 vim.api.nvim_set_keymap('n', '<leader>q', ':qa!<CR>', { noremap = true })
+
+-- Trouble toggle
+vim.api.nvim_set_keymap('n', '<leader>T', ':TroubleToggle<CR>', { noremap = true })

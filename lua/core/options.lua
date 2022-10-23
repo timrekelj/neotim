@@ -21,10 +21,14 @@ vim.o.showmode = false
 vim.o.showtabline = 2
 vim.o.signcolumn = 'yes'
 vim.o.mouse = 'a'
-vim.opt.guifont = { "Source Code Pro", ":h11" }
+vim.opt.guifont = { "JetBrainsMono Nerd Font", ":h11" }
+
+-- 0.8.0 features
+vim.o.ls = 0
+vim.o.ch = 0
+vim.o.winbar = '%f'
 
 -- Set theme
-vim.g.catppuccin_flavour = 'mocha'
-vim.cmd([[colorscheme catppuccin]])
+vim.cmd([[colorscheme tokyonight]])
 
 vim.cmd([[set clipboard+=unnamedplus]])

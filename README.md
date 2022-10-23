@@ -1,7 +1,9 @@
 # My personal neovim configuration
 
+> This configuration was heavily inspired by [Lunar Vim's neovim from scratch](https://github.com/LunarVim/Neovim-from-scratch).
+
 ## Requirements
- - [neovim (v0.7.x)](https://github.com/neovim/neovim/releases/tag/v0.7.2)
+ - [neovim (v0.8.x)](https://github.com/neovim/neovim/releases/tag/v0.7.2)
  - [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
  - [npm](https://github.com/npm/cli) for downloading packages of LSP language servers
 

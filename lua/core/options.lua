@@ -30,6 +30,7 @@ vim.o.ch = 0
 vim.o.winbar = '%f'
 
 -- Set theme
-vim.cmd([[colorscheme tokyonight]])
+vim.o.background = dark
+vim.cmd([[colorscheme gruvbox]])
 
 vim.cmd([[set clipboard+=unnamedplus]])

@@ -71,7 +71,7 @@ return packer.startup(function(use)
     }
 
     -- Themes
-    use 'folke/tokyonight.nvim'
+    use { "ellisonleao/gruvbox.nvim" }
 
     -- Syntax highlihting
     use 'nvim-treesitter/nvim-treesitter'

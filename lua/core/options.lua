@@ -21,7 +21,7 @@ vim.o.showmode = false
 vim.o.showtabline = 2
 vim.o.signcolumn = 'yes'
 vim.o.mouse = 'a'
-vim.opt.guifont = { "JetBrainsMono Nerd Font", ":h11" }
+vim.opt.guifont = { "JetBrainsMono Nerd", ":h11" }
 vim.opt.guicursor = {}
 
 -- 0.8.0 features

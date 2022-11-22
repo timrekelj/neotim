@@ -28,7 +28,7 @@ vim.api.nvim_set_keymap('n', '<leader>r', ':so %<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>q', ':qa!<CR>', { noremap = true })
 
 -- Trouble toggle
-vim.api.nvim_set_keymap('n', '<leader>T', ':TroubleToggle<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>T', ':TroubleToggle document_diagnostics<CR>', { noremap = true })
 
 -- Delete without sending deleted stuff to register
 vim.api.nvim_set_keymap('v', '<leader>l', '\"_dP',  { noremap = true } )

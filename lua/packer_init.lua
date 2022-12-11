@@ -1,4 +1,4 @@
------------------------------------------------------------
+-----------------------------------------------------------packer
 -- Plugin manager configuration file
 -----------------------------------------------------------
 
@@ -77,7 +77,7 @@ return packer.startup(function(use)
     }
 
     -- Themes
-    use { "ellisonleao/gruvbox.nvim" }
+    use { "joshdick/onedark.vim" }
 
     -- Syntax highlihting
     use 'nvim-treesitter/nvim-treesitter'
@@ -106,4 +106,16 @@ return packer.startup(function(use)
         'goolord/alpha-nvim',
         requires = { 'kyazdani42/nvim-web-devicons' },
     }
+
+    use({
+        "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    })
+
+    
 end)

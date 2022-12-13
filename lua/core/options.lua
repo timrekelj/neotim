@@ -31,6 +31,6 @@ vim.o.winbar = '%f'
 
 -- Set theme
 vim.o.background = 'dark'
-vim.cmd([[colorscheme onedark]])
+vim.cmd([[colorscheme shades_of_purple]])
 
 vim.cmd([[set clipboard+=unnamedplus]])

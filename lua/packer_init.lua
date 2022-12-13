@@ -77,7 +77,7 @@ return packer.startup(function(use)
     }
 
     -- Themes
-    use { "joshdick/onedark.vim" }
+    use { "Rigellute/shades-of-purple.vim" }
 
     -- Syntax highlihting
     use 'nvim-treesitter/nvim-treesitter'

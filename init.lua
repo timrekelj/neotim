@@ -7,8 +7,9 @@ require('core.keymaps')
 
 -- Plugin connfigurations
 require('plugins.alpha')
-require('plugins.indent_blankline')
-require('plugins.nvim-cmp')
 require('plugins.nvim-treesitter')
 require('plugins.telescope')
+require('plugins.harpoon')
+require('plugins.undotree')
+require('plugins.fugitive')
 require('plugins.lsp')

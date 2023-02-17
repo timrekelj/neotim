@@ -12,7 +12,7 @@
 #### 1. Clone repository
 
 ```sh
-git clone git@github.com:timrekelj/nvim-config ~/.config/nvim
+git clone git@github.com:timrekelj/neotim ~/.config/nvim
 ```
 
 #### 2. Start neovim with `PackerSync` command:

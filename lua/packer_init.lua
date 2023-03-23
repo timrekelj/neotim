@@ -76,7 +76,7 @@ return packer.startup(function(use)
     }
 
     -- Themes
-    use 'folke/tokyonight.nvim'
+    use 'Mofiqul/dracula.nvim'
 
     -- Syntax highlihting
     use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
@@ -88,12 +88,6 @@ return packer.startup(function(use)
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         requires = { {'nvim-lua/plenary.nvim'} }
-    }
-
-    -- Dashboard (start screen)
-    use {
-        'goolord/alpha-nvim',
-        requires = { 'kyazdani42/nvim-web-devicons' },
     }
 
     use({

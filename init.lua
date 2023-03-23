@@ -6,7 +6,6 @@ require('core.options')
 require('core.keymaps')
 
 -- Plugin connfigurations
-require('plugins.alpha')
 require('plugins.nvim-treesitter')
 require('plugins.telescope')
 require('plugins.harpoon')

@@ -37,10 +37,7 @@ end
 
 -- Install plugins
 return packer.startup(function(use)
-    -- Package manager
-    use 'wbthomason/packer.nvim'
-
-    -- LSP
+    use 'wbthomason/packer.nvim' -- plugin manager
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
@@ -63,42 +60,19 @@ return packer.startup(function(use)
             {'rafamadriz/friendly-snippets'}, -- Optional
         }
     }
-
-    -- Icons
-    use 'kyazdani42/nvim-web-devicons'
-
-    -- Autopair
-    use {
-        'windwp/nvim-autopairs',
-        config = function()
-            require('nvim-autopairs').setup {}
-        end
-    }
-
-    -- Themes
-    use 'Mofiqul/dracula.nvim'
-
-    -- Syntax highlihting
-    use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
-
-    -- Easier comments
-    use 'tpope/vim-commentary'
-
-    -- Searching
-    use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    use 'kyazdani42/nvim-web-devicons' -- icons
+    use 'Mofiqul/dracula.nvim' -- theme
+    use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' }) -- syntax highlighting
+    use 'tpope/vim-commentary' -- easier comments
+    use { 
+        'nvim-telescope/telescope.nvim', tag = '0.1.1', -- file searching
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-
     use({
         "kylechui/nvim-surround",
         tag = "*"
     })
-
     use 'theprimeagen/harpoon'
-
     use 'mbbill/undotree'
-
     use 'tpope/vim-fugitive'
-    
 end)

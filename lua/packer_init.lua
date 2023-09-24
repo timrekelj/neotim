@@ -1,10 +1,3 @@
------------------------------------------------------------packer
--- Plugin manager configuration file
------------------------------------------------------------
-
--- Plugin manager: packer.nvim
--- url: https://github.com/wbthomason/packer.nvim
-
 -- Automatically install packer
 local fn = vim.fn
 local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
@@ -68,11 +61,5 @@ return packer.startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.1', -- file searching
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use({
-        "kylechui/nvim-surround",
-        tag = "*"
-    })
     use 'theprimeagen/harpoon'
-    use 'mbbill/undotree'
-    use 'tpope/vim-fugitive'
 end)

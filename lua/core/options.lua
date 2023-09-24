@@ -21,7 +21,7 @@ vim.o.showmode = false
 vim.o.showtabline = 2
 vim.o.signcolumn = 'yes'
 vim.o.mouse = 'a'
-vim.opt.guifont = { "JetBrains Mono", ":h11" }
+vim.opt.guifont = { "Cascadia Code", ":h11" }
 vim.opt.guicursor = {}
 
 vim.opt.swapfile = false

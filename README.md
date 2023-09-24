@@ -24,23 +24,28 @@ nvim +PackerSync
 
 ## Keybindings
 
+- **Random**
+	- `=` while selection - reformat
+
 - **keymaps.lua**
-	- `<leader> + fv` - open netrw
-	- `J` & `K` - Move highlighted lines
-	- `J`  - Append bottom line to current and keep cursor in same position
+    - `<leader> + fv` - open netrw
+    - `J`  - Append bottom line to current and keep cursor in same position
+    - `ctrl + u`  - Move up and keep cursor in same position
+	- `ctrl + d`  - Move down and keep cursor in same position
+    - `<leader> + o` - Add new line under cursor without leaving normal mode
+    - `<leader> + O` - Add new line above cursor without leaving normal mode
 	- `<leader> + Y` - copy line to clipboard
 	- `<leader> + y` - copy selection to clipboard
 	- `ctrl + c` - replacement for esc
 	- `<leader> + s` - rename word under cursor
 	- `<leader> + S` - search and replace
-	- `<leader> + l` - delete without sending to register
-
-- **Random**
-	- `:so` - source current file
-	- `=` while selection - reformat
+	- `<leader> + p` - delete without sending to register
 
 - **LSP**
 	- `gl` - show error
+    - `gd` - go to definition
+    - `gD` - go to declaration
+    - `K` - show info
 
 - **Netrw**
 	- `d` - create directory
@@ -52,26 +57,13 @@ nvim +PackerSync
 	- `<leader> + fb` - buffers
 
 - **harpoon.lua**
+    - `<leader> + fh` - view files in harpoon
 	- `<leader> + a` - add file to harpoon
-	- `ctrl + e` - open file 1
-	- `ctrl + t` - open file 2
-	- `ctrl + n` - open file 3
-	- `ctrl + s` - open file 4
-
-- **fugitive.lua**
-	- `<leader> + gs` - open git status
-
-- **undotree.lua**
-	- `<leader> + u` - open undotree
+	- `<leader> + jj` - open file 1
+	- `<leader> + jk` - open file 2
+	- `<leader> + jl` - open file 3
+	- `<leader> + j;` - open file 4
 
 - **commentary**
-	- `gc`  - comments selection
+	- `<leader>c`  - comments selection or a line
 
-- **surround**
-	- `surround_words` -> `ysiw)` -> `(surround_words)`
-	- `make strings`  -> `ys$"` -> `"make strings"`
-	- `[delete around me!]` -> `ds]` -> `delete around me!`
-	- `remove <b>HTML tags</b>` -> `dst` -> `remove HTML tags`
-	- `'change quotes'` -> `cs'"` -> `"change quotes"`
-	- `<b>or tag types</b>` -> `csth1<CR>` -> `<h1>or tag types</h1>`
-	- `delete(function calls)` -> `dsf` -> `function calls`

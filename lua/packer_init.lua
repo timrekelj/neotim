@@ -61,6 +61,7 @@ return packer.startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.1', -- file searching
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use 'rstacruz/vim-closer'
+    use 'jiangmiao/auto-pairs'
     use 'theprimeagen/harpoon'
+    use 'github/copilot.vim'
 end)

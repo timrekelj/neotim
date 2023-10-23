@@ -1,13 +1,6 @@
 -- File manager
 vim.keymap.set('n', '<leader>fv', vim.cmd.Ex)
 
--- Append bottom line to current and keep cursor in same position
-vim.keymap.set("n", "J", "mzJ`z")
-
--- Move with cursor centered
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
-
 -- Create new line without entering insert
 vim.keymap.set("n", "<leader>o", "o<esc>")
 vim.keymap.set("n", "<leader>O", "O<esc>")
@@ -27,3 +20,10 @@ vim.keymap.set('n', '<leader>S', ':%s/')
 
 -- Delete without sending deleted stuff to register
 vim.keymap.set('v', '<leader>p', '\"_dP')
+
+-- Use Alt + h/j/k/l to move in insert mode instead of arrow keys
+vim.keymap.set('i', '<A-h>', '<Left>')
+vim.keymap.set('i', '<A-j>', '<Down>')
+vim.keymap.set('i', '<A-k>', '<Up>')
+vim.keymap.set('i', '<A-l>', '<Right>')
+

@@ -21,8 +21,8 @@ vim.o.showmode = false
 vim.o.showtabline = 2
 vim.o.signcolumn = 'yes'
 vim.o.mouse = 'a'
-vim.opt.guifont = { "Cascadia Code", ":h11" }
 vim.opt.guicursor = {}
+vim.cmd([[autocmd FileType * set formatoptions-=ro]])
 
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -35,6 +35,6 @@ vim.o.ch = 0
 vim.o.winbar = '%f'
 
 -- Set theme
-vim.cmd([[colorscheme dracula]])
+vim.cmd([[colorscheme nord]])
 vim.api.nvim_set_hl(0, 'Normal', { bg = "none" })
 vim.api.nvim_set_hl(0, 'NormalFloat', { bg = "none" })

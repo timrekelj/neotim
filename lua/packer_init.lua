@@ -54,7 +54,7 @@ return packer.startup(function(use)
         }
     }
     use 'kyazdani42/nvim-web-devicons' -- icons
-    use 'shaunsingh/nord.nvim' -- theme
+    use 'navarasu/onedark.nvim' -- theme
     use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' }) -- syntax highlighting
     use 'tpope/vim-commentary' -- easier comments
     use { 

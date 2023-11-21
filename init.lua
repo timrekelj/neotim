@@ -12,7 +12,7 @@ require('plugins.telescope')
 require('plugins.harpoon')
 require('plugins.lsp')
 require('plugins.commentary')
-require('plugins.copilot')
 require('plugins.vscode')
 require('plugins.surround')
+require('plugins.copilot')
 

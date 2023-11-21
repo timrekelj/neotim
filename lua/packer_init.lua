@@ -3,7 +3,7 @@ local fn = vim.fn
 local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
 
 if fn.empty(fn.glob(install_path)) > 0 then
-    local packer_bootstrap = fn.system({
+    packer_bootstrap = fn.system({
         'git',
         'clone',
         '--depth',
@@ -57,12 +57,11 @@ return packer.startup(function(use)
     use 'Mofiqul/vscode.nvim' -- theme
     use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' }) -- syntax highlighting
     use 'tpope/vim-commentary' -- easier comments
-    use { 
+    use {
         'nvim-telescope/telescope.nvim', tag = '0.1.4', -- file searching
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use 'kylechui/nvim-surround'
-    use 'jiangmiao/auto-pairs'
-    use 'theprimeagen/harpoon'
-    use 'github/copilot.vim'
+    use 'kylechui/nvim-surround' -- surround text
+    use 'theprimeagen/harpoon'-- quick file navigation
+    use 'github/copilot.vim' -- github copilot
 end)

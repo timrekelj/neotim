@@ -54,7 +54,7 @@ return packer.startup(function(use)
         }
     }
     use 'kyazdani42/nvim-web-devicons' -- icons
-    use 'Mofiqul/vscode.nvim' -- theme
+    use { "catppuccin/nvim", as = "catppuccin" } -- theme
     use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' }) -- syntax highlighting
     use 'tpope/vim-commentary' -- easier comments
     use {
@@ -64,4 +64,5 @@ return packer.startup(function(use)
     use 'kylechui/nvim-surround' -- surround text
     use 'theprimeagen/harpoon'-- quick file navigation
     use 'github/copilot.vim' -- github copilot
+    use 'folke/todo-comments.nvim' -- todo comments
 end)

@@ -81,3 +81,13 @@ nvim +PackerSync
     - `<b>or tag* types</b>` -> `csth1<CR>` -> `<h1>or tag types</h1>`
     - `delete(functi*on calls)` -> `dsf` -> `function calls`
 
+- **todo-comments**
+    - `<leader>t` -> show all TODO in project
+    - `<leader>ta` -> show all kewords in project
+    - `<leader>tf` -> show all FIX in project
+    - `<leader>tp` -> show all HACK in project
+    - `<leader>th` -> show all PERF in project
+    - `<leader>tn` -> show all NOTE in project
+    - `<leader>tw` -> show all WARNING in project
+    - `<leader>tt` -> show all TEST in project
+

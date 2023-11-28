@@ -1,4 +1,3 @@
-
 -- File manager
 vim.keymap.set('n', '<leader>fv', vim.cmd.Ex)
 
@@ -28,3 +27,18 @@ vim.keymap.set('i', '<A-j>', '<Down>')
 vim.keymap.set('i', '<A-k>', '<Up>')
 vim.keymap.set('i', '<A-l>', '<Right>')
 
+vim.keymap.set('n', '<leader>fk', ':lua Open_keybindings()<CR>', { noremap = true, silent = true })
+
+function Open_keybindings()
+  vim.cmd[[
+    belowright new
+    setlocal buftype=nofile
+    setlocal bufhidden=hide
+    setlocal noswapfile
+    setlocal nobuflisted
+    setlocal nowrap
+    edit ~/.config/nvim/docs/keybindings.md
+    setlocal nomodifiable
+    nnoremap <buffer> q :q<CR>
+  ]]
+end

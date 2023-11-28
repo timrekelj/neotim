@@ -5,6 +5,7 @@
     - `:bd` - delete currend buffer
 
 - **keymaps.lua**
+    - `<leader> + fk` - open new buffer with this file (press q to close buffer)
     - `<leader> + fv` - open netrw
     - `J`  - Append bottom line to current and keep cursor in same position
     - `ctrl + u`  - Move up and keep cursor in same position

@@ -3,7 +3,7 @@ require('packer_init')
 
 -- Core settings
 require('core.options')
-require('core.keymaps')
+require('core.keybindings')
 require('core.commands')
 
 -- Plugin configurations

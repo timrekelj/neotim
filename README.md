@@ -26,4 +26,5 @@ git clone git@github.com:timrekelj/neotim ~/.config/nvim
 nvim +PackerSync
 ```
 
+> [!TIP]
 > If you want to learn more about this configuration, here are [keybindings](./docs/keybindings.md) and [configuration structure](./docs/structure.md)

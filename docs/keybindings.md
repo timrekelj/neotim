@@ -33,6 +33,7 @@
 	- `<leader> + ff` - find files
 	- `<leader> + fg` - live grep
 	- `<leader> + fb` - buffers
+    - `<leader> + fp` - projects
 
 - **harpoon.lua**
     - `<leader> + fh` - view files in harpoon
@@ -67,4 +68,15 @@
     - `<leader>tn` -> show all NOTE in project
     - `<leader>tw` -> show all WARNING in project
     - `<leader>tt` -> show all TEST in project
+
+- **projects**
+    - `ctrl + d` -> delete currently selected project
+    - `ctrl + v` -> rename currently selected project
+    - `ctrl + a` -> create a project*
+    - `ctrl + s` -> search inside files within your project
+    - `ctrl + b` -> browse inside files within your project
+    - `ctrl + l` -> change to the selected project's directory without opening it
+    - `ctrl + r` -> find a recently opened file within your project
+    - `ctrl + f` -> find a file within your project (same as <CR>)
+    - `ctrl + o` -> change current cd scope
 

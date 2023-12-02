@@ -65,4 +65,5 @@ return packer.startup(function(use)
     use 'theprimeagen/harpoon'-- quick file navigation
     use 'github/copilot.vim' -- github copilot
     use 'folke/todo-comments.nvim' -- todo comments
+    use 'nvim-telescope/telescope-project.nvim'
 end)

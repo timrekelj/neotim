@@ -16,4 +16,3 @@ require('plugins.surround')
 require('plugins.copilot')
 require('plugins.catppuccin')
 require('plugins.todo')
-

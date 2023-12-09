@@ -1,4 +1,3 @@
--- TODO: find out how to change colors
 require("todo-comments").setup()
 
 vim.api.nvim_set_keymap("n", "<leader>ta", ':TodoTelescope<CR>', { noremap = true, silent = true })

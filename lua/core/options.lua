@@ -20,7 +20,6 @@ vim.o.termguicolors = true
 vim.o.showmode = false
 vim.o.showtabline = 2
 vim.o.signcolumn = 'yes'
-vim.o.mouse = 'a'
 vim.opt.guicursor = {}
 vim.cmd([[autocmd FileType * set formatoptions-=ro]])
 

@@ -1,5 +1,5 @@
 -- Plugin manager and plugin installation
-require('packer_init')
+require('package_install')
 
 -- Core settings
 require('core.options')

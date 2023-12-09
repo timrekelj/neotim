@@ -31,7 +31,7 @@ vim.keymap.set('n', '<leader>fk', ':lua Open_keybindings()<CR>', { noremap = tru
 
 function Open_keybindings()
   vim.cmd[[
-    belowright new
+    vertical new
     setlocal buftype=nofile
     setlocal bufhidden=hide
     setlocal noswapfile

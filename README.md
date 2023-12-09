@@ -21,10 +21,7 @@ Semi-minimalistic neovim configuration.
 git clone git@github.com:timrekelj/neotim ~/.config/nvim
 ```
 
-2. Start neovim with `PackerSync` command to install packages
-```sh
-nvim +PackerSync
-```
+2. Start neovim and install packages with `:Lazy`
 
 > [!TIP]
 > If you want to learn more about this configuration, here are [keybindings](./docs/keybindings.md) and [configuration structure](./docs/structure.md)

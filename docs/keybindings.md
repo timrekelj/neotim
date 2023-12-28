@@ -18,6 +18,7 @@
 	- `<leader> + s` - rename word under cursor
 	- `<leader> + S` - search and replace
 	- `<leader> + p` - delete without sending to register
+    - `shift + alt + h/j/k/l` - move through split windows
 
 - **LSP**
 	- `gl` - show error
@@ -30,10 +31,12 @@
 	- `%` - create file
 
 - **telescope.lua**
-	- `<leader> + ff` - find files
+	- `<leader> + ff` - find files (also `ctrl + p`)
 	- `<leader> + fg` - live grep
 	- `<leader> + fb` - buffers
     - `<leader> + fp` - projects
+    - `ctrl + v` - open file in vertical split
+    - `ctrl + x` - open file in horizontal split
 
 - **harpoon.lua**
     - `<leader> + fh` - view files in harpoon
@@ -48,7 +51,7 @@
 
 - **copilot**
     - `ctrl + /` - accept suggestion
-    - `<leader>ct` - toggle copilot suggestions
+    - `<leader>tc` - toggle copilot suggestions
 
 - **nvim-surround**
     - `surr*ound_words` -> `ysiw)` -> `(surround_words)`

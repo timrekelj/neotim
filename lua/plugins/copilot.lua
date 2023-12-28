@@ -12,4 +12,4 @@ vim.api.nvim_create_user_command('CopilotToggle', function ()
     end
 end, {nargs = 0})
 
-vim.keymap.set('n', '<leader>ct', ':CopilotToggle<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>tc', ':CopilotToggle<CR>', { noremap = true, silent = true })

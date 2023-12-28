@@ -27,6 +27,13 @@ vim.keymap.set('i', '<A-j>', '<Down>')
 vim.keymap.set('i', '<A-k>', '<Up>')
 vim.keymap.set('i', '<A-l>', '<Right>')
 
+-- Use Ctrl + h/j/k/l to move through split windows
+vim.keymap.set('n', '<S-M-h>', '<C-w>h')
+vim.keymap.set('n', '<S-M-l>', '<C-w>l')
+vim.keymap.set('n', '<S-M-k>', '<C-w>k')
+vim.keymap.set('n', '<S-M-j>', '<C-w>j')
+
+-- Open keybindings file
 vim.keymap.set('n', '<leader>fk', ':lua Open_keybindings()<CR>', { noremap = true, silent = true })
 
 function Open_keybindings()

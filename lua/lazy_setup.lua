@@ -34,18 +34,16 @@ require('lazy').setup({
             'rafamadriz/friendly-snippets', -- Optional
         }
     },
-    { 'catppuccin/nvim', as = 'catppuccin' },
+    { 'catppuccin/nvim', as = 'catppuccin' }, -- theme
     'nvim-tree/nvim-web-devicons', -- icons
     'nvim-treesitter/nvim-treesitter', -- syntax highlighting
     'tpope/vim-commentary', -- easier comments
     {
         'nvim-telescope/telescope.nvim', -- file searching
-        dependencies = { 'nvim-lua/plenary.nvim' } 
+        dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    'kylechui/nvim-surround', -- surround text
     'theprimeagen/harpoon', -- quick file navigation
     'github/copilot.vim', -- github copilot
     'folke/todo-comments.nvim', -- todo comments
-    'nvim-telescope/telescope-project.nvim'
 })
 

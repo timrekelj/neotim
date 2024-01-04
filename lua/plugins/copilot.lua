@@ -1,7 +1,6 @@
 vim.g.copilot_no_tab_map = true
-vim.api.nvim_set_keymap(
-   "i", "<C-_>", 'copilot#Accept("<CR>")', { silent = true, expr = true }
-)
+
+vim.keymap.set("i", "<C-_>", 'copilot#Accept("<CR>")', { silent = true, expr = true, replace_keycodes = false })
 
 vim.api.nvim_create_user_command('CopilotToggle', function ()
     vim.g.copilot_enabled = not vim.g.copilot_enabled

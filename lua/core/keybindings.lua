@@ -9,9 +9,6 @@ vim.keymap.set("n", "<leader>O", "O<esc>")
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
--- ctrl + c instead of esc
-vim.keymap.set("i", "<C-c>", "<Esc>")
-
 -- Rename word under cursor
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
@@ -27,11 +24,13 @@ vim.keymap.set('i', '<A-j>', '<Down>')
 vim.keymap.set('i', '<A-k>', '<Up>')
 vim.keymap.set('i', '<A-l>', '<Right>')
 
+vim.keymap.set('t', '<C-[>', '<C-\\><C-N>')
+
 -- Use Ctrl + h/j/k/l to move through split windows
-vim.keymap.set('n', '<S-M-h>', '<C-w>h')
-vim.keymap.set('n', '<S-M-l>', '<C-w>l')
-vim.keymap.set('n', '<S-M-k>', '<C-w>k')
-vim.keymap.set('n', '<S-M-j>', '<C-w>j')
+vim.keymap.set('n', '<C-h>', '<C-w>h')
+vim.keymap.set('n', '<C-l>', '<C-w>l')
+vim.keymap.set('n', '<C-k>', '<C-w>k')
+vim.keymap.set('n', '<C-j>', '<C-w>j')
 
 -- Open keybindings file
 vim.keymap.set('n', '<leader>fk', ':lua Open_keybindings()<CR>', { noremap = true, silent = true })

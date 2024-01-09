@@ -44,6 +44,7 @@ git clone git@github.com:timrekelj/neotim ~/.config/nvim
 	- `<leader> + S` - search and replace
 	- `<leader> + p` - paste delete without sending to register
     - `ctrl + h/j/k/l` - move through split windows
+    - `ctrl + alt + h/j/k/l` - resize split windows
 
 - **LSP**
 	- `gl` - show error

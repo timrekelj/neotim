@@ -32,6 +32,12 @@ vim.keymap.set('n', '<C-l>', '<C-w>l')
 vim.keymap.set('n', '<C-k>', '<C-w>k')
 vim.keymap.set('n', '<C-j>', '<C-w>j')
 
+-- Use Ctrl + Shift + h/j/k/l to resize split windows
+vim.keymap.set('n', '<C-M-h>', ':vertical resize -5<CR>')
+vim.keymap.set('n', '<C-M-l>', ':vertical resize +5<CR>')
+vim.keymap.set('n', '<C-M-k>', ':resize -5<CR>')
+vim.keymap.set('n', '<C-M-j>', ':resize +5<CR>')
+
 -- Open keybindings file
 vim.keymap.set('n', '<leader>fk', ':lua Open_keybindings()<CR>', { noremap = true, silent = true })
 

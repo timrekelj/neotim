@@ -1,5 +1,9 @@
 -- File manager
-vim.keymap.set('n', '<leader>fv', vim.cmd.Ex)
+vim.keymap.set('n', '<leader>fm', vim.cmd.Ex)
+vim.keymap.set('n', '<leader>fM', function()
+    vim.cmd("vsplit")
+    vim.cmd.Ex()
+end)
 
 -- Create new line without entering insert
 vim.keymap.set("n", "<leader>o", "o<esc>")
@@ -24,7 +28,7 @@ vim.keymap.set('i', '<C-j>', '<Down>')
 vim.keymap.set('i', '<C-k>', '<Up>')
 vim.keymap.set('i', '<C-l>', '<Right>')
 
-vim.keymap.set('t', '<C-[>', '<C-\\><C-N>')
+vim.keymap.set('t', '<C-[>', '<C-\\><C-N>') -- exit terminal mode
 
 -- Use Ctrl + h/j/k/l to move through split windows
 vim.keymap.set('n', '<C-h>', '<C-w>h')
@@ -38,19 +42,3 @@ vim.keymap.set('n', '<C-M-l>', ':vertical resize +5<CR>')
 vim.keymap.set('n', '<C-M-k>', ':resize -5<CR>')
 vim.keymap.set('n', '<C-M-j>', ':resize +5<CR>')
 
--- Open keybindings file
-vim.keymap.set('n', '<leader>fk', ':lua Open_keybindings()<CR>', { noremap = true, silent = true })
-
-function Open_keybindings()
-  vim.cmd[[
-    vertical new
-    setlocal buftype=nofile
-    setlocal bufhidden=hide
-    setlocal noswapfile
-    setlocal nobuflisted
-    setlocal nowrap
-    edit ~/.config/nvim/docs/keybindings.md
-    setlocal nomodifiable
-    nnoremap <buffer> q :q<CR>
-  ]]
-end

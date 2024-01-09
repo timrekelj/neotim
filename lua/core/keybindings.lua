@@ -19,10 +19,10 @@ vim.keymap.set('n', '<leader>S', ':%s/')
 vim.keymap.set('v', '<leader>p', '\"_dP')
 
 -- Use Alt + h/j/k/l to move in insert mode instead of arrow keys
-vim.keymap.set('i', '<A-h>', '<Left>')
-vim.keymap.set('i', '<A-j>', '<Down>')
-vim.keymap.set('i', '<A-k>', '<Up>')
-vim.keymap.set('i', '<A-l>', '<Right>')
+vim.keymap.set('i', '<C-h>', '<Left>')
+vim.keymap.set('i', '<C-j>', '<Down>')
+vim.keymap.set('i', '<C-k>', '<Up>')
+vim.keymap.set('i', '<C-l>', '<Right>')
 
 vim.keymap.set('t', '<C-[>', '<C-\\><C-N>')
 

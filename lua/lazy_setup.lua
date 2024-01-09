@@ -12,28 +12,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-    {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v1.x',
-        dependencies = {
-            -- LSP Support
-            'neovim/nvim-lspconfig',             -- Required
-            'williamboman/mason.nvim',           -- Optional
-            'williamboman/mason-lspconfig.nvim', -- Optional
+    -- LSP
+    {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
+    {'neovim/nvim-lspconfig'},
+    {'hrsh7th/cmp-nvim-lsp'},
+    {'hrsh7th/nvim-cmp'},
+    {'L3MON4D3/LuaSnip'},
 
-            -- Autocompletion
-            'hrsh7th/nvim-cmp',         -- Required
-            'hrsh7th/cmp-nvim-lsp',     -- Required
-            'hrsh7th/cmp-buffer',       -- Optional
-            'hrsh7th/cmp-path',         -- Optional
-            'saadparwaiz1/cmp_luasnip', -- Optional
-            'hrsh7th/cmp-nvim-lua',     -- Optional
+    -- Manage LSP installation from neovim
+    {'williamboman/mason.nvim'},
+    {'williamboman/mason-lspconfig.nvim'},
 
-            -- Snippets
-            'L3MON4D3/LuaSnip',             -- Required
-            'rafamadriz/friendly-snippets', -- Optional
-        }
-    },
     { 'catppuccin/nvim', as = 'catppuccin' }, -- theme
     'nvim-tree/nvim-web-devicons', -- icons
     'nvim-treesitter/nvim-treesitter', -- syntax highlighting
@@ -45,5 +34,9 @@ require('lazy').setup({
     'theprimeagen/harpoon', -- quick file navigation
     'github/copilot.vim', -- github copilot
     'folke/todo-comments.nvim', -- todo comments
+    {
+        'nvim-lualine/lualine.nvim', -- statusline
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    }
 })
 

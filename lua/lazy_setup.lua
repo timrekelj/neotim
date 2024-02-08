@@ -37,6 +37,8 @@ require('lazy').setup({
     {
         'nvim-lualine/lualine.nvim', -- statusline
         dependencies = { 'nvim-tree/nvim-web-devicons' }
-    }
+    },
+    'm4xshen/autoclose.nvim', -- autoclose brackets
+    'IogaMaster/neocord' -- discord rich presence
 })
 

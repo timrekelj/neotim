@@ -28,6 +28,6 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
 -- Set theme
--- vim.cmd([[colorscheme catppuccin-mocha]])
--- vim.api.nvim_set_hl(0, 'Normal', { bg = "none" })
--- vim.api.nvim_set_hl(0, 'NormalFloat', { bg = "none" })
+vim.cmd([[colorscheme dracula]])
+vim.api.nvim_set_hl(0, 'Normal', { bg = "none" })
+vim.api.nvim_set_hl(0, 'NormalFloat', { bg = "none" })

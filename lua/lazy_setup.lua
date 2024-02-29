@@ -23,7 +23,7 @@ require('lazy').setup({
     {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
 
-    'Mofiqul/dracula.nvim', -- dracula theme
+    'Mofiqul/vscode.nvim', -- VSCode theme
     'nvim-tree/nvim-web-devicons', -- icons
     'nvim-treesitter/nvim-treesitter', -- syntax highlighting
     'tpope/vim-commentary', -- easier comments
@@ -38,7 +38,6 @@ require('lazy').setup({
         'nvim-lualine/lualine.nvim', -- statusline
         dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
-    'm4xshen/autoclose.nvim', -- autoclose brackets
-    'IogaMaster/neocord' -- discord rich presence
+    'm4xshen/autoclose.nvim' -- autoclose brackets
 })
 

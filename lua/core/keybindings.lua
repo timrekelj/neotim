@@ -1,3 +1,6 @@
+-- Map Ctrl+c to Esc
+vim.keymap.set('i', '<C-c>', '<Esc>')
+
 -- File manager
 vim.keymap.set('n', '<leader>fm', vim.cmd.Ex)
 vim.keymap.set('n', '<leader>fM', function()
@@ -21,6 +24,10 @@ vim.keymap.set('n', '<leader>S', ':%s/')
 
 -- Delete without sending deleted stuff to register
 vim.keymap.set('v', '<leader>p', '\"_dP')
+
+-- Copy and paste from clipboard
+vim.keymap.set('v', '<leader>y', '"+y')
+vim.keymap.set('n', '<leader>p', '"+p')
 
 -- Use Alt + h/j/k/l to move in insert mode instead of arrow keys
 vim.keymap.set('i', '<C-h>', '<Left>')

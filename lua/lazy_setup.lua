@@ -31,8 +31,6 @@ require('lazy').setup({
         'nvim-telescope/telescope.nvim', -- file searching
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    'theprimeagen/harpoon', -- quick file navigation
-    'github/copilot.vim', -- github copilot
     'folke/todo-comments.nvim', -- todo comments
     {
         'nvim-lualine/lualine.nvim', -- statusline

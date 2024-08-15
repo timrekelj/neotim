@@ -49,3 +49,6 @@ vim.keymap.set('n', '<C-M-l>', ':vertical resize +5<CR>')
 vim.keymap.set('n', '<C-M-k>', ':resize -5<CR>')
 vim.keymap.set('n', '<C-M-j>', ':resize +5<CR>')
 
+-- Move through tabs
+vim.keymap.set('n', '<Tab>', ':tabnext<CR>')
+vim.keymap.set('n', '<S-Tab>', ':tabprevious<CR>')

@@ -31,7 +31,6 @@ require('lazy').setup({
         'nvim-telescope/telescope.nvim', -- file searching
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    'folke/todo-comments.nvim', -- todo comments
     {
         'nvim-lualine/lualine.nvim', -- statusline
         dependencies = { 'nvim-tree/nvim-web-devicons' }

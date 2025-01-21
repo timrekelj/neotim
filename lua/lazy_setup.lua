@@ -23,7 +23,7 @@ require('lazy').setup({
     {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
 
-    'Mofiqul/vscode.nvim', -- VSCode theme
+    'Mofiqul/dracula.nvim', -- Dracula theme
     'nvim-tree/nvim-web-devicons', -- icons
     'nvim-treesitter/nvim-treesitter', -- syntax highlighting
     'tpope/vim-commentary', -- easier comments

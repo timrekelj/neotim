@@ -1,5 +1,26 @@
+-- Lua:
+-- For dark theme (neovim's default)
+vim.o.background = 'dark'
 
--- Set theme and transparent background
- vim.cmd([[colorscheme dracula]])
--- vim.api.nvim_set_hl(0, 'Normal', { bg = "none" })
--- vim.api.nvim_set_hl(0, 'NormalFloat', { bg = "none" })
+local c = require('vscode.colors').get_colors()
+require('vscode').setup({
+    -- Alternatively set style in setup
+    -- style = 'light'
+
+    -- Enable transparent background
+    transparent = true,
+
+    -- Enable italic comment
+    italic_comments = true,
+
+    -- Underline `@markup.link.*` variants
+    underline_links = true,
+
+    -- Disable nvim-tree background color
+    disable_nvimtree_bg = true,
+})
+-- require('vscode').load()
+
+-- load the theme without affecting devicon colors.
+vim.cmd.colorscheme "vscode"
+

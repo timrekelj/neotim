@@ -1,6 +1,10 @@
 -- Map Ctrl+c to Esc
 vim.keymap.set('i', '<C-c>', '<Esc>')
 
+-- Center cursor after moving up and down
+vim.keymap.set("n", "<C-d>", "<C-d>zz", {desc = "Center cursor after moving down half-page"})
+vim.keymap.set("n", "<C-u>", "<C-u>zz", {desc = "Center cursor after moving up half-page"})
+
 -- File manager
 vim.keymap.set('n', '<leader>fm', vim.cmd.Ex)
 vim.keymap.set('n', '<leader>fM', function()
@@ -52,3 +56,6 @@ vim.keymap.set('n', '<C-M-j>', ':resize +5<CR>')
 -- Move through tabs
 vim.keymap.set('n', '<Tab>', ':tabnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':tabprevious<CR>')
+
+vim.g.ftplugin_sql_omni_key = '<C-j>'
+

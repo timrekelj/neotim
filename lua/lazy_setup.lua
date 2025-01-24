@@ -23,10 +23,14 @@ require('lazy').setup({
     {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
 
-    'Mofiqul/dracula.nvim', -- Dracula theme
+    'aspeddro/gitui.nvim', -- GitUI
+    'Mofiqul/vscode.nvim', -- VSCode Dark theme
     'nvim-tree/nvim-web-devicons', -- icons
     'nvim-treesitter/nvim-treesitter', -- syntax highlighting
     'tpope/vim-commentary', -- easier comments
+    -- 'xiyaowong/transparent.nvim', -- transparent background (not needed for VSCode theme)
+    'kylechui/nvim-surround',
+    {'trstringer/psql.nvim'},
     {
         'nvim-telescope/telescope.nvim', -- file searching
         dependencies = { 'nvim-lua/plenary.nvim' }

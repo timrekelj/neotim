@@ -1,2 +1,7 @@
-vim.keymap.set("n", "<leader>c", ":Commentary<CR>")
-vim.keymap.set("v", "<leader>c", ":Commentary<CR>")
+return {
+  "tpope/vim-commentary",
+  keys = {
+    { "<leader>c", "<cmd>Commentary<CR>", mode = "n" },
+    { "<leader>c", "<cmd>Commentary<CR>", mode = "v" },
+  },
+}

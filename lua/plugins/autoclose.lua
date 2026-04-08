@@ -1,1 +1,5 @@
-require("autoclose").setup()
+return {
+  "m4xshen/autoclose.nvim",
+  event = "InsertEnter",
+  opts = {},
+}

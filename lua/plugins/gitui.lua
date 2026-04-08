@@ -1,32 +1,26 @@
-require("gitui").setup({
-    -- Command Options
+return {
+  "aspeddro/gitui.nvim",
+  cmd = { "Gitui" },
+  keys = {
+    {
+      "<leader>gg",
+      function()
+        require("gitui").open()
+      end,
+    },
+  },
+  opts = {
     command = {
-        -- Enable :Gitui command
-        -- @type: bool
-        enable = true,
+      enable = true,
     },
-    -- Path to binary
-    -- @type: string
     binary = "gitui",
-    -- Argumens to gitui
-    -- @type: table of string
     args = {},
-    -- WIndow Options
     window = {
-        options = {
-            -- Width window in %
-            -- @type: number
-            width = 90,
-            -- Height window in %
-            -- @type: number
-            height = 80,
-            -- Border Style
-            -- Enum: "none", "single", "rounded", "solid" or "shadow"
-            -- @type: string
-            border = "rounded",
-        },
+      options = {
+        width = 90,
+        height = 80,
+        border = "rounded",
+      },
     },
-})
-
-vim.keymap.set('n', '<leader>gg', '<cmd>lua require("gitui").open()<cr>')
-
+  },
+}

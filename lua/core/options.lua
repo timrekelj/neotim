@@ -22,6 +22,7 @@ vim.o.signcolumn = 'yes'
 vim.opt.guicursor = {}
 vim.cmd([[autocmd FileType * set formatoptions-=ro]])
 vim.o.showtabline = 2
+vim.o.updatetime = 250
 
 vim.opt.swapfile = false
 vim.opt.backup = false

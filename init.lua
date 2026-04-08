@@ -1,18 +1,7 @@
--- Plugin manager and plugin installation
-require('lazy_setup')
-
 -- Core settings
 require('core.options')
 require('core.keybindings')
+require('core.treesitter')
 
--- Plugin configurations
-require('plugins.treesitter')
-require('plugins.telescope')
-require('plugins.lsp')
-require('plugins.commentary')
-require('plugins.lualine')
-require('plugins.autoclose')
-require('plugins.theme')
-require('plugins.psql')
-require('plugins.gitui')
-require('plugins.surround')
+-- Plugin manager bootstrap
+require('config.lazy')

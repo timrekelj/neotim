@@ -1,20 +1,58 @@
-local builtin = require('telescope.builtin')
+return {
+  "nvim-telescope/telescope.nvim",
+  dependencies = { "nvim-lua/plenary.nvim" },
+  cmd = "Telescope",
+  keys = {
+    {
+      "<C-p>",
+      function()
+        require("telescope.builtin").find_files()
+      end,
+    },
+    {
+      "<C-S-F>",
+      function()
+        require("telescope.builtin").live_grep()
+      end,
+    },
+    {
+      "<C-B>",
+      function()
+        require("telescope.builtin").buffers()
+      end,
+    },
+    {
+      "<C-A>",
+      function()
+        require("telescope.builtin").help_tags()
+      end,
+    },
+    {
+      "<leader>d",
+      function()
+        require("telescope.builtin").diagnostics({ bufnr = 0 })
+      end,
+      desc = "File diagnostics",
+    },
+    {
+      "<leader>D",
+      function()
+        require("telescope.builtin").diagnostics()
+      end,
+      desc = "Workspace diagnostics",
+    },
+  },
+  opts = function()
+    local actions = require("telescope.actions")
 
-vim.keymap.set('n', '<C-p>', builtin.find_files, {})
-vim.keymap.set('n', '<C-S-F>', builtin.live_grep, {})
-vim.keymap.set('n', '<C-B>', builtin.buffers, {})
-vim.keymap.set('n', '<C-A>', builtin.help_tags, {})
-
-local telescope = require('telescope')
-
-local actions = require("telescope.actions")
-require('telescope').setup{
-  defaults = {
-    mappings = {
-      i = {
-        ["<CR>"] = actions.select_tab,
+    return {
+      defaults = {
+        mappings = {
+          i = {
+            ["<CR>"] = actions.select_tab,
+          },
+        },
       },
     }
-  }
+  end,
 }
-

@@ -26,6 +26,7 @@ vim.o.showtabline = 2
 vim.o.updatetime = 250
 
 vim.diagnostic.config({
+  signs = false,
   virtual_text = false,
   virtual_lines = { current_line = true },
 })

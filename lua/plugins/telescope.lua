@@ -23,6 +23,7 @@ return {
         extensions = {
           file_browser = {
             grouped = true,
+            hijack_netrw = true,
           },
         },
       })

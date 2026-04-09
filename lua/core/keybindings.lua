@@ -21,5 +21,3 @@ vim.keymap.set('n', '<leader>p', '"+p')
 vim.keymap.set('n', '<Tab>', ':tabnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':tabprevious<CR>')
 
-vim.g.ftplugin_sql_omni_key = '<C-j>'
-

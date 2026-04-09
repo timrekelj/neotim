@@ -24,6 +24,11 @@ vim.cmd.syntax("enable")
 vim.cmd([[autocmd FileType * set formatoptions-=ro]])
 vim.o.showtabline = 2
 vim.o.updatetime = 250
+
+vim.diagnostic.config({
+  virtual_text = false,
+  virtual_lines = { current_line = true },
+})
 vim.opt.completeopt = { "menuone", "noinsert", "noselect", "popup" }
 
 vim.opt.swapfile = false

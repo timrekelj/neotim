@@ -1,9 +1,9 @@
 -- Map Ctrl+c to Esc
-vim.keymap.set('i', '<C-c>', '<Esc>')
+vim.keymap.set('i', '<C-c>', '<Esc>', { nowait = true })
 
 -- Center cursor after moving up and down
-vim.keymap.set("n", "<C-d>", "<C-d>zz", {desc = "Center cursor after moving down half-page"})
-vim.keymap.set("n", "<C-u>", "<C-u>zz", {desc = "Center cursor after moving up half-page"})
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- Create new line without entering insert
 vim.keymap.set("n", "<leader>o", "o<esc>")

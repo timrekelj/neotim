@@ -23,6 +23,8 @@ return {
         extensions = {
           file_browser = {
             grouped = true,
+            hidden = { file_browser = true, folder_browser = true },
+            respect_gitignore = false,
             hijack_netrw = true,
           },
         },

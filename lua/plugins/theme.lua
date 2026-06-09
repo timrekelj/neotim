@@ -1,10 +1,8 @@
 return {
-  "duarteocarmo/cursor-themes",
+  "Mofiqul/dracula.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    vim.o.background = "dark"
-
-    vim.cmd.colorscheme("cursor-dark")
+    vim.cmd("colorscheme dracula")
   end,
 }

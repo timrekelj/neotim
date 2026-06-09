@@ -17,6 +17,10 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set('v', '<leader>y', '"+y')
 vim.keymap.set('n', '<leader>p', '"+p')
 
+-- File browser (netrw)
+vim.keymap.set('n', '<leader>e', '<cmd>Explore<cr>', { desc = "File browser (project root)" })
+vim.keymap.set('n', '<leader>E', '<cmd>Explore %:p:h<cr>', { desc = "File browser (current file dir)" })
+
 -- Move through tabs
 vim.keymap.set('n', '<Tab>', ':tabnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':tabprevious<CR>')
